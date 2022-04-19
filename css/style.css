@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: chocolate;
+}
+
+#create-account-form {
+  width: 400px;
+  padding: 20px;
+  text-transform: uppercase;
+  background: white;
+}
+
+#create-account-form .title {
+  margin-bottom: 20px;
+}
+
+#create-account-form .input-group {
+  margin: 20px 0;
+  position: relative;
+}
+
+#create-account-form .input-group label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+#create-account-form .input-group input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+#create-account-form .input-group i {
+  position: absolute;
+  right: 10px;
+  top: 35px;
+  visibility: hidden;
+}
+
+#create-account-form .input-group p {
+  font-size: 15px;
+  color: red;
+  visibility: hidden;
+}
+
+#create-account-form .success input {
+  border: 2px solid green;
+}
+
+#create-account-form .success i.fa-circle-check {
+  visibility: visible;
+  color: green;
+}
+
+#create-account-form .error input {
+  border: 2px solid red;
+}
+
+#create-account-form .error i.fa-circle-exclamation {
+  visibility: visible;
+  color: red;
+}
+
+#create-account-form .error p {
+  visibility: visible;
+}
+
+#create-account-form .btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  background: chocolate;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#create-account-form .btn:hover {
+  background: #a55318;
+  color: #e6e6e6;
+  letter-spacing: 2px;
+  border-radius: 7px;
+}

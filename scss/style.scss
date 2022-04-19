@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: chocolate;
+}
+
+#create-account-form {
+    width: 400px;
+    padding: 20px;
+    text-transform: uppercase;
+    background: hsl(0, 0%, 100%);
+
+    .title {
+        margin-bottom: 20px;
+    }
+
+    .input-group {
+        margin: 20px 0;
+        position: relative;
+
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+        }
+
+        i {
+            position: absolute;
+            right: 10px;
+            top: 35px;
+            visibility: hidden;
+        }
+
+        p {
+            font-size: 15px;
+            color: red;
+            visibility: hidden;
+        }
+    }
+
+    .success {
+        
+        input {
+            border: 2px solid green;
+        }
+
+        i.fa-circle-check {
+            visibility: visible;
+            color: green;
+        }
+    }
+
+    .error {
+
+        input {
+            border: 2px solid red;
+        }
+
+        i.fa-circle-exclamation {
+            visibility: visible;
+            color: red;
+        }
+
+        p {
+            visibility: visible;
+        }
+    }
+
+    .btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 20px;
+        background: hsl(25, 75%, 47%);
+        color: hsl(0, 0%, 100%);
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    .btn:hover {
+        background: hsl(25, 75%, 37%);
+        color: hsl(0, 0%, 90%);
+        letter-spacing: 2px;
+        border-radius: 7px;
+    }
+}
