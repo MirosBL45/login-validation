@@ -98,3 +98,18 @@ body {
         border-radius: 7px;
     }
 }
+
+@media (max-width: 410px) {
+    #create-account-form {
+        width: 350px;
+    }
+
+    .input-group {
+        margin: 20px 0;
+        position: relative;
+
+        p {
+            font-size: 12px !important;
+        }
+    }
+}
